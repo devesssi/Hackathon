@@ -10,11 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
     "@splinetool/react-spline": "^4.0.0",
-=======
-    "chart.js": "^4.4.4",
->>>>>>> 717b666c9b758d9a4fd8c95d6e06a6b2512ac866
+    "axios": "^1.7.7",
+    "langchain": "^0.3.2",
     "react": "^18.3.1",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1",
