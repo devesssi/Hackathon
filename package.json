@@ -10,12 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
+    "@splinetool/react-spline": "^4.0.0",
+=======
     "chart.js": "^4.4.4",
+>>>>>>> 717b666c9b758d9a4fd8c95d6e06a6b2512ac866
     "react": "^18.3.1",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1",
     "react-icons": "^5.3.0",
-    "react-router-dom": "^6.26.2"
+    "react-router-dom": "^6.26.2",
+    "react-simple-typewriter": "^5.0.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.1",

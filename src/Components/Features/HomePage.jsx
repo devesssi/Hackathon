@@ -1,10 +1,43 @@
 import React from 'react';
+import { Typewriter } from 'react-simple-typewriter';
+import '../Backgroundcss/Background.css'; // Import the CSS for the animation and styling
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      {/* Initially empty */}
-      {/* You can add more content here later */}
+    <div className="home-page-container">
+      {/* Snake-like Background Animation */}
+      <div className="snake-animation"></div>
+
+      {/* Foreground content */}
+      <div className="content-container">
+        {/* Text Section */}
+        <div className="text-section">
+          <h1 className="main-heading">
+            <Typewriter
+              words={['Welcome to the Engineering Platform', 'Your Journey Begins Here']}
+              loop={false}
+              cursor
+              cursorStyle="_"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+            />
+          </h1>
+          <p className="subtext">
+            Our platform provides top-notch resources, interactive courses, and an engaging community to help engineering students excel in their studies and future careers.
+          </p>
+          <button className="cta-button">Get Started</button>
+        </div>
+
+        {/* Image Section */}
+        <div className="image-section">
+          <img
+            src="https://thumbs.dreamstime.com/b/minimalist-college-logo-design-suitable-online-learning-platform-simple-icon-modern-vector-315290373.jpg"
+            alt="Engineering illustration"
+            className="illustration-image"
+          />
+        </div>
+      </div>
     </div>
   );
 };
