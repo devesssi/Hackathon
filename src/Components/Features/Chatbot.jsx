@@ -54,7 +54,7 @@ function App() {
   }
 
   return (
-    <div className="bg-gradient-to-r from-blue-500 to-gray-100 h-screen p-3 flex flex-col">
+    <div className="bg-gradient-to-r mt-11 from-blue-500 to-gray-100 h-screen p-3 flex flex-col">
       {/* Chat History Section */}
       <div
         className="w-full mx-auto flex-grow flex flex-col space-y-4 p-4 overflow-y-auto"

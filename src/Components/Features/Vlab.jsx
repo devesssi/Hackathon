@@ -44,8 +44,8 @@ const VirtualLabRedirect = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-8 mt-8">
-      <h1 className="text-5xl font-bold mb-0">Welcome to the Virtual Lab</h1>
+    <div className="min-h-screen  bg-gray-100 flex flex-col items-center justify-center p-8 mt-16">
+      <h1 className="text-5xl font-bold mb-0 font-mono m-5">Welcome to the Virtual Lab</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-6 mt-8">
         {disciplines.map((discipline, index) => (
