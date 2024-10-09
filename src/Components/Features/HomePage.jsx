@@ -32,8 +32,8 @@ const HomePage = () => {
         </div>
 
         {/* Image Section */}
-        <div className="image-section rounded-full">
-          <img
+        <div className="image-section rounded-full" style={{borderRadius : "50%"}}>
+          <img style={{borderRadius : "50%"}}
             src="https://thumbs.dreamstime.com/b/minimalist-college-logo-design-suitable-online-learning-platform-simple-icon-modern-vector-315290373.jpg"
             alt="Engineering illustration"
             className="illustration-image"
