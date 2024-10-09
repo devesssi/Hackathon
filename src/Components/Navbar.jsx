@@ -26,6 +26,9 @@ const Navbar = () => {
           <Link to="/about" className="hover:bg-blue-500 px-3 py-2 rounded">About Us</Link>
           <Link to="/contact" className="hover:bg-blue-500 px-3 py-2 rounded">Contact</Link>
           <Link to="/Chatbot" className="hover:bg-blue-500 px-3 py-2 rounded">Chatbot</Link>
+          
+          
+          
 
 
 

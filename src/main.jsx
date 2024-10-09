@@ -10,7 +10,7 @@ import HomePage from './Components/Features/HomePage';
 import Load from './Components/Features/Loading/Load';
 
 import Chatbot from "./Components/Features/Chatbot"
-
+import SignUp from './Components/Auth/SignUp';
 import Vlab from "./Components/Features/Vlab"
 import AboutUs from './Components/Features/AboutUs';
 
@@ -35,6 +35,7 @@ const router = createBrowserRouter(
     <Route path="/Chatbot" element={<Chatbot />} />
 
     <Route path='/about' element={<AboutUs/>}/>
+    <Route path='/signup' element={<SignUp/>}/>
 
 
     </Route>
