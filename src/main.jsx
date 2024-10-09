@@ -12,8 +12,6 @@ import Load from './Components/Features/Loading/Load';
 import Vlab from './Components/Features/vlab';
 
 
-
-import Vlab from "./Components/Features/Vlab"
 import AboutUs from './Components/Features/AboutUs';
 
 // Creating the router using react-router-dom
