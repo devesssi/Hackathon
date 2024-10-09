@@ -20,27 +20,22 @@ const Navbar = () => {
 
         {/* Desktop Navigation Menu */}
         <nav className="hidden md:flex space-x-6 text-gray-100">
-          <Link to="/home" className="hover:bg-gray-500 px-3 py-2 rounded">
-            Home
-          </Link>
-          <Link to="/courses" className="hover:bg-gray-500 px-3 py-2 rounded">
-            Courses
-          </Link>
-          <Link to="/features" className="hover:bg-gray-500 px-3 py-2 rounded">
-            Features
-          </Link>
-          <Link to="/vlab" className="hover:bg-gray-500 px-3 py-2 rounded">
-            vlab
-          </Link>
-          <Link to="/about" className="hover:bg-gray-500 px-3 py-2 rounded">
-            About Us
-          </Link>
-          <Link to="/contact" className="hover:bg-gray-500 px-3 py-2 rounded">
-            Contact
-          </Link>
-          <Link to="/Chatbot" className="hover:bg-gray-500 px-3 py-2 rounded">
-            Chatbot
-          </Link>
+          <Link to="/home" className="hover:bg-gray-500 px-3 py-2 rounded">Home</Link>
+          <Link to="/courses" className="hover:bg-gray-500 px-3 py-2 rounded">Courses</Link>
+          <Link to="/features" className="hover:bg-gray-500 px-3 py-2 rounded">Features</Link>
+          <Link to="/vlab" className="hover:bg-gray-500 px-3 py-2 rounded">vlab</Link>
+          <Link to="/about" className="hover:bg-gray-500 px-3 py-2 rounded">About Us</Link>
+          <Link to="/contact" className="hover:bg-gray-500 px-3 py-2 rounded">Contact</Link>
+          <Link to="/Chatbot" className="hover:bg-gray-500 px-3 py-2 rounded">Chatbot</Link>
+
+       
+          
+          
+
+
+
+
+         
         </nav>
 
         {/* Buttons */}
