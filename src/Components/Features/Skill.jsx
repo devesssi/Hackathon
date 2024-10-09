@@ -64,7 +64,7 @@ const SkillsPage = () => {
   // Function to handle skill click and increment progress
   const handleSkillClick = (skill) => {
     setProgress((prevProgress) => {
-      const newProgress = Math.min(prevProgress[skill] + 10, 100);
+      const newProgress = Math.min(prevProgress[skill] + 5, 100);
       return { ...prevProgress, [skill]: newProgress };
     });
   };
@@ -99,7 +99,7 @@ const SkillsPage = () => {
 
         {/* Progress Bars Section */}
         <div className="mt-10">
-          <h2 className="text-2xl font-semibold mb-4">Track Your Progress</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-gray-100">Track Your Progress</h2>
           <div className="space-y-4">
             {Object.keys(progress).map((skill) => (
               <div key={skill} className="bg-white p-4 rounded-lg shadow-md">

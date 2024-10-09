@@ -188,10 +188,10 @@ const StudyMaterialPage = () => {
   return (
     <div className="min-h-screen bg-gray-100 mt-12">
       <div className="container mx-auto p-8">
-        <h1 className="text-4xl font-bold text-center mb-6">{subject} Study Material</h1>
+        <h1 className="text-4xl font-bold text-center mb-6 mt-4">{subject} Study Material</h1>
 
         {materials ? (
-          <div className="space-y-4">
+          <div className="space-y-4 m-20">
             {/* Lecture Notes */}
             <div className="bg-white p-4 rounded-lg shadow-md">
               <a
@@ -200,12 +200,12 @@ const StudyMaterialPage = () => {
                 rel="noopener noreferrer"
                 className="text-lg font-semibold text-blue-500 hover:underline"
               >
-                Lecture Notes
+                Reference Notes
               </a>
             </div>
 
             {/* Practice Problems */}
-            <div className="bg-white p-4 rounded-lg shadow-md">
+            {/*<div className="bg-white p-4 rounded-lg shadow-md">
               <a
                 href={materials.practiceProblems}
                 target="_blank"
@@ -214,10 +214,10 @@ const StudyMaterialPage = () => {
               >
                 Practice Problems
               </a>
-            </div>
+            </div>*/}
 
             {/* Video Lectures */}
-            <div className="bg-white p-4 rounded-lg shadow-md">
+            {/*<div className="bg-white p-4 rounded-lg shadow-md">
               <a
                 href={materials.videoLectures}
                 target="_blank"
@@ -226,7 +226,7 @@ const StudyMaterialPage = () => {
               >
                 Video Lectures
               </a>
-            </div>
+            </div>*/}
           </div>
         ) : (
           <p className="text-center text-gray-500">No study materials available for this subject.</p>
