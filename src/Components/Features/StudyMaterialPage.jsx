@@ -189,7 +189,7 @@ const StudyMaterialPage = () => {
     <div className="min-h-screen bg-gray-100 mt-12">
       <div className="container mx-auto p-8">
         <h1 className="text-4xl font-bold text-center mb-6">{subject} Study Material</h1>
-
+            
         {materials ? (
           <div className="space-y-4">
             {/* Lecture Notes */}
@@ -226,8 +226,21 @@ const StudyMaterialPage = () => {
               >
                 Video Lectures
               </a>
+             
             </div>
-          </div>
+            <div className=''>
+              <div className='m-6'>
+              <iframe width="500" height="315" src="https://www.youtube.com/embed/LwCRRUa8yTU?si=57iMy3ATPViIwbV9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div className='m-6'>
+              <iframe width="500" height="315" src="https://www.youtube.com/embed/JnTa9XtvmfI?si=x84he9MSslbC8HN9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              
+             
+              
+              
+            </div>
+          </div> 
         ) : (
           <p className="text-center text-gray-500">No study materials available for this subject.</p>
         )}
