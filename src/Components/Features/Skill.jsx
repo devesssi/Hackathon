@@ -115,7 +115,7 @@ const SkillsPage = () => {
   };
 
   return (
-    <div className="min-h-screen mt-12" style={{ background: '#1E3A8A' }}>
+    <div className="min-h-screen mt-20" style={{ background: '#1E3A8A' }}>
       <div className="container mx-auto p-8">
         <h1 className="text-4xl font-bold text-white text-center mb-10">Develop Your Skills</h1>
 
