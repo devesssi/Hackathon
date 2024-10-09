@@ -5,7 +5,7 @@ import { Route, Router, RouterProvider, createBrowserRouter, createRoutesFromEle
 import Layout from './Components/Layout'; // Ensure Layout is defined
 import CoursesPage from './Components/Features/CourcesPage';
 import SkillsPage from './Components/Features/Skill';
-
+import StudyMaterialPage from './Components/Features/StudyMaterialPage';
 import HomePage from './Components/Features/HomePage';
 import Load from './Components/Features/Loading/Load';
 
@@ -27,6 +27,8 @@ const router = createBrowserRouter(
     <Route path="/home" element={<HomePage />} />
 
     <Route path="/courses" element={<CoursesPage/>} />
+     <Route path="/study-material/:subject" element={<StudyMaterialPage />} />
+      
     <Route path="/features" element={<SkillsPage />} />
     <Route path="/" element={<HomePage />} />
     <Route path="/vlab" element={<Vlab />} />

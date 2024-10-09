@@ -35,18 +35,18 @@ const disciplines = [
 ];
 
 const VirtualLabRedirect = () => {
-  const handleRedirect = (url) => {
-    window.open(url, '_blank'); // Opens the link in a new tab
-  };
-
   const redirectToLab = () => {
     window.location.href = "https://iitb.vlabs.co.in/"; // Redirects to the main lab site
   };
 
+  const handleRedirect = (url) => {
+    window.open(url, '_blank'); // Opens the link in a new tab
+  };
+
   return (
-    <div className="min-h-screen  tm-10 bg-gray-100 flex flex-col items-center justify-center p-8">
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-8 mt-6">
       <h1 className="text-5xl font-bold mb-0">Welcome to the Virtual Lab</h1>
-      
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-6 mt-8">
         {disciplines.map((discipline, index) => (
           <div
@@ -70,29 +70,15 @@ const VirtualLabRedirect = () => {
           </div>
         ))}
       </div>
-      
+
       <button 
         onClick={redirectToLab}
-        className="bg-blue-500 text-white px-6 py-3 rounded-lg text-lg">
+        className="bg-blue-500 text-white px-6 py-3 rounded-lg text-lg mb-6">
         Go to Virtual Lab
       </button>
-      
-     {/* Additional Information Section
-       <div className="bg-white p-8 rounded-lg shadow-lg text-center mt-8">
-        <h1 className="text-3xl font-bold text-gray-800 mb-6">
-          Experience hands-on learning
-        </h1>
-        <p className="text-gray-600 mb-6">
-          Visit the Virtual Lab platform to access interactive experiments and simulations.
-        </p>
-        <button 
-          onClick={redirectToLab}
-          className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-300">
-          Go to Virtual Lab
-        </button>
-      </div> */}
     </div>
   );
 };
 
 export default VirtualLabRedirect;
+
