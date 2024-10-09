@@ -9,23 +9,23 @@ const Navbar = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-gray-100 text-black py-4 z-50 shadow-lg">
+    <header className="fixed top-0 left-0 right-0 bg-gray-900 text-black py-4 z-50 shadow-lg">
       <div className="container mx-auto px-4 flex justify-between items-center">
         
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <h1 className="text-2xl font-bold">Engineering Platform</h1>
+          <h1 className=" text-gray-100 text-2xl font-bold">Engineering Platform</h1>
         </div>
 
         {/* Desktop Navigation Menu */}
-        <nav className="hidden md:flex space-x-6">
-          <Link to="/home" className="hover:bg-blue-500 px-3 py-2 rounded">Home</Link>
-          <Link to="/courses" className="hover:bg-blue-500 px-3 py-2 rounded">Courses</Link>
-          <Link to="/features" className="hover:bg-blue-500 px-3 py-2 rounded">Features</Link>
-          <Link to="/vlab" className="hover:bg-blue-500 px-3 py-2 rounded">vlab</Link>
-          <Link to="/about" className="hover:bg-blue-500 px-3 py-2 rounded">About Us</Link>
-          <Link to="/contact" className="hover:bg-blue-500 px-3 py-2 rounded">Contact</Link>
-          <Link to="/Chatbot" className="hover:bg-blue-500 px-3 py-2 rounded">Chatbot</Link>
+        <nav className="hidden md:flex space-x-6 text-gray-100">
+          <Link to="/home" className="hover:bg-gray-500 px-3 py-2 rounded">Home</Link>
+          <Link to="/courses" className="hover:bg-gray-500 px-3 py-2 rounded">Courses</Link>
+          <Link to="/features" className="hover:bg-gray-500 px-3 py-2 rounded">Features</Link>
+          <Link to="/vlab" className="hover:bg-gray-500 px-3 py-2 rounded">vlab</Link>
+          <Link to="/about" className="hover:bg-gray-500 px-3 py-2 rounded">About Us</Link>
+          <Link to="/contact" className="hover:bg-gray-500 px-3 py-2 rounded">Contact</Link>
+          <Link to="/Chatbot" className="hover:bg-gray-500 px-3 py-2 rounded">Chatbot</Link>
 
 
 
@@ -34,8 +34,8 @@ const Navbar = () => {
 
         {/* Buttons */}
         <div className="hidden md:flex space-x-4">
-          <Link to="/login" className="bg-transparent border border-black text-black py-2 px-4 rounded hover:bg-black hover:text-white transition-colors duration-200">Login</Link>
-          <Link to="/signup" className="bg-white text-blue-600 py-2 px-4 rounded hover:bg-blue-500 hover:text-white transition-colors duration-200">Sign Up</Link>
+          <Link to="/login" className="bg-transparent border border-gray-100 text-gray-100 py-2 px-4 rounded hover:bg-gray-300 hover:text-black transition-colors duration-200">Login</Link>
+          <Link to="/signup" className="bg-transparent border border-gray-100 text-gray-100 py-2 px-4 rounded hover:bg-gray-300 hover:text-black transition-colors duration-200">Sign Up</Link>
         </div>
 
         {/* Mobile Menu Toggle Button */}

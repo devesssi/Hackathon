@@ -35,7 +35,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="about-us">
+    <div className="about-us mt-20">
       <style>{`
         .about-us {
           display: flex;
