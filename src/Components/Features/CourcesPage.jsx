@@ -84,14 +84,14 @@ const CoursesPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 mt-12">
+    <div className="min-h-screen bg-gray-300 mt-12">
       <div className="container mx-auto p-8">
         <h1 className="text-4xl font-bold text-center mb-10">Explore Courses</h1>
 
         {coursesData.map((semester, index) => (
           <div key={index} className="mb-6">
             <div
-              className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg cursor-pointer flex justify-between items-center"
+              className="bg-gray-200 p-4 rounded-lg shadow-md hover:shadow-lg cursor-pointer flex justify-between items-center"
               onClick={() => toggleSemester(index)}
             >
               <h2 className="text-2xl font-semibold">{semester.semester}</h2>
