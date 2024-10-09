@@ -84,7 +84,7 @@ const CoursesPage = () => {
   };
 
   return (
-    <div className="min-h-screen  bg-gray-300 mt-12">
+    <div className="min-h-screen  bg-gray-300 mt-20">
       <div className="container mx-auto p-8">
         <h1 className="text-4xl font-bold text-center mb-10">Explore Courses</h1>
 
