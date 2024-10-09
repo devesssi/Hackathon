@@ -13,6 +13,8 @@ import Chatbot from "./Components/Features/Chatbot/"
 import SignUp from './Components/Auth/SignUp';
 import Vlab from "./Components/Features/Vlab"
 import AboutUs from './Components/Features/AboutUs';
+import ProfilePage from './Components/Features/Profilepage';
+import Contact from './Components/Features/Contact';
 
 // Creating the router using react-router-dom
 const router = createBrowserRouter(
@@ -36,6 +38,8 @@ const router = createBrowserRouter(
 
     <Route path='/about' element={<AboutUs/>}/>
     <Route path='/signup' element={<SignUp/>}/>
+    <Route path='/profile' element={<ProfilePage/>}/>
+    <Route path='/contact' element={<Contact/>}/>
 
 
     </Route>
