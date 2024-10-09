@@ -106,7 +106,7 @@ const SkillsPage = () => {
   const handleSkillClick = (skill, link) => {
     // Update progress
     setProgress((prevProgress) => {
-      const newProgress = Math.min(prevProgress[skill] + 10, 100);
+      const newProgress = Math.min(prevProgress[skill] + 5, 100);
       return { ...prevProgress, [skill]: newProgress };
     });
     
