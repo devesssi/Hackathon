@@ -20,10 +20,7 @@ const Navbar = () => {
           <Link to="/about" className="hover:bg-blue-500 px-3 py-2 rounded">About Us</Link>
           <Link to="/contact" className="hover:bg-blue-500 px-3 py-2 rounded">Contact</Link>
 
-<<<<<<< HEAD
-=======
-          
->>>>>>> 717b666c9b758d9a4fd8c95d6e06a6b2512ac866
+
         </nav>
 
         {/* Buttons */}
