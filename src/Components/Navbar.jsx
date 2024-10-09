@@ -27,15 +27,7 @@ const Navbar = () => {
           <Link to="/contact" className="hover:bg-gray-500 px-3 py-2 rounded">Contact</Link>
           <Link to="/Chatbot" className="hover:bg-gray-500 px-3 py-2 rounded">Chatbot</Link>
 
-        <nav className="hidden md:flex space-x-6">
-          <Link to="/home" className="hover:bg-blue-500 px-3 py-2 rounded">Home</Link>
-          <Link to="/courses" className="hover:bg-blue-500 px-3 py-2 rounded">Courses</Link>
-          <Link to="/features" className="hover:bg-blue-500 px-3 py-2 rounded">Features</Link>
-          <Link to="/vlab" className="hover:bg-blue-500 px-3 py-2 rounded">vlab</Link>
-          <Link to="/about" className="hover:bg-blue-500 px-3 py-2 rounded">About Us</Link>
-          <Link to="/contact" className="hover:bg-blue-500 px-3 py-2 rounded">Contact</Link>
-          <Link to="/Chatbot" className="hover:bg-blue-500 px-3 py-2 rounded">Chatbot</Link>
-          
+       
           
           
 
