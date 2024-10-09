@@ -144,7 +144,7 @@ const SkillsPage = () => {
 
         {/* Progress Bars Section */}
         <div className="mt-10">
-          <h2 className="text-2xl font-semibold mb-4">Track Your Progress</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-gray-100">Track Your Progress</h2>
           <div className="space-y-4">
             {Object.keys(progress).map((skill) => (
               <div key={skill} className="bg-white p-4 rounded-lg shadow-md">
