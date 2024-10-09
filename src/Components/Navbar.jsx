@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGears } from '@fortawesome/free-solid-svg-icons';
+
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -9,12 +12,12 @@ const Navbar = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-gray-900 text-black py-4 z-50 shadow-lg">
-      <div className="container mx-auto px-4 flex justify-between items-center">
+    <header className="fixed top-0 m-3 rounded-2xl left-0 right-0 bg-gray-900 text-black py-4 z-50 shadow-lg">
+      <div className="container   mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <h1 className=" text-gray-100 text-2xl font-bold">
-            Engineering Platform
+          <h1 className=" text-gray-100  m-1 text-2xl font-bold">
+          <FontAwesomeIcon icon={faGears} fade size="2xl" style={{color: "#ffffff",}} />
           </h1>
         </div>
 

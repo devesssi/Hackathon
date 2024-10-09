@@ -1,6 +1,8 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import '../Backgroundcss/Background.css'; // Import the CSS for the animation and styling
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGears } from '@fortawesome/free-solid-svg-icons';
 
 const HomePage = () => {
   return (
@@ -30,12 +32,13 @@ const HomePage = () => {
         </div>
 
         {/* Image Section */}
-        <div className="image-section">
+        <div className="image-section rounded-full">
           <img
             src="https://thumbs.dreamstime.com/b/minimalist-college-logo-design-suitable-online-learning-platform-simple-icon-modern-vector-315290373.jpg"
             alt="Engineering illustration"
             className="illustration-image"
           />
+           
         </div>
       </div>
     </div>
