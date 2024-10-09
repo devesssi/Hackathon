@@ -5,8 +5,6 @@ import './App.css'
 
 import Footer from './Components/Footer'
 import Main from "./Components/Main"
-import VirtualLabRedirect from './Features/vlab'
-
 
 
 function App() {
@@ -15,7 +13,7 @@ function App() {
   return (
     <>
     <Main/>
-    <Footer/>  
+
     
     </>
   )
