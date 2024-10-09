@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
 import Main from "./Components/Main"
 
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -13,7 +14,7 @@ function App() {
     <>
     <Navbar/>
     <Main/>
-    <Footer/>
+    <Footer/>    
     </>
   )
 }
