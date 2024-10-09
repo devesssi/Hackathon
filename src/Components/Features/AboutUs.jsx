@@ -1,4 +1,4 @@
- import React from 'react';
+import React from 'react';
 
 const AboutUs = () => {
   const teamMembers = [
@@ -35,11 +35,11 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="about-us">
+    <div className="about-us mt-20">
       <style>{`
         .about-us {
           display: flex;
-          justify-content: center;
+          flex-direction: column;
           align-items: center;
           height: 100vh;
           background-color: #f4f4f4;
@@ -48,12 +48,13 @@ const AboutUs = () => {
         .about-us h1 {
           font-size: 60px;
           font-weight: 200;
-          margin: 20px;
+          margin: 20px 0;
         }
         .card-container {
           display: flex;
           justify-content: space-around;
           flex-wrap: wrap;
+          margin-top: 20px; /* Space for the heading */
         }
         .card {
           width: 250px;
@@ -119,4 +120,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs
+export default AboutUs;

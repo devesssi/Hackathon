@@ -5,13 +5,19 @@ import { Route, Router, RouterProvider, createBrowserRouter, createRoutesFromEle
 import Layout from './Components/Layout'; // Ensure Layout is defined
 import CoursesPage from './Components/Features/CourcesPage';
 import SkillsPage from './Components/Features/Skill';
-import Chatbot from './Components/Features/chatbot';
-
+import StudyMaterialPage from './Components/Features/StudyMaterialPage';
 import HomePage from './Components/Features/HomePage';
 import Load from './Components/Features/Loading/Load';
+<<<<<<< HEAD
 import Vlab from './Components/Features/vlab';
 
 
+=======
+
+import Chatbot from "./Components/Features/Chatbot"
+import SignUp from './Components/Auth/SignUp';
+import Vlab from "./Components/Features/Vlab"
+>>>>>>> 706227c62e120a0ab32b1a553b5055daa7869ffa
 import AboutUs from './Components/Features/AboutUs';
 
 // Creating the router using react-router-dom
@@ -27,12 +33,15 @@ const router = createBrowserRouter(
     <Route path="/home" element={<HomePage />} />
 
     <Route path="/courses" element={<CoursesPage/>} />
+     <Route path="/study-material/:subject" element={<StudyMaterialPage />} />
+      
     <Route path="/features" element={<SkillsPage />} />
     <Route path="/" element={<HomePage />} />
     <Route path="/vlab" element={<Vlab />} />
     <Route path="/Chatbot" element={<Chatbot />} />
 
     <Route path='/about' element={<AboutUs/>}/>
+    <Route path='/signup' element={<SignUp/>}/>
 
 
     </Route>
