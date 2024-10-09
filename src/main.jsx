@@ -11,15 +11,14 @@ import HomePage from './Components/Features/HomePage'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-<<<<<<< HEA
       
       
       
-=======
+
     <Route path="/courses" element={<CoursesPage/>} />
     <Route path="/features" element={<SkillsPage />} />
     <Route path="/" element={<HomePage />} />
->>>>>>> aafaa42afc8c8b4a91e560c98b9a785cde443d08
+
     </Route>
   )
 );
