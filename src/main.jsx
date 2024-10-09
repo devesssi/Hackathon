@@ -9,7 +9,9 @@ import Layout from './Components/Layout'; // Ensure Layout is defined
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-     
+      
+      
+      
     </Route>
   )
 );
