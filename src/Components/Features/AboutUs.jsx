@@ -1,11 +1,11 @@
-import React from 'react';
+ import React from 'react';
 
 const AboutUs = () => {
   const teamMembers = [
     {
       name: 'Dinesh Verma',
       role: 'Leader',
-      about: 'Dinesh is the leader of this project.',
+      about: 'Dinesh is the leader of this project',
       imgSrc: 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png',
     },
     {
@@ -17,7 +17,7 @@ const AboutUs = () => {
     {
       name: 'Pranay Verma',
       role: 'Member',
-      about: "Pranay is the talented programmer without whose skills the project wouldn't have been completed.",
+      about: 'Pranay is the talented programmer without his skills the project wouldn’t have completed.',
       imgSrc: 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png',
     },
     {
@@ -35,54 +35,88 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-5">
-      <h1 className="text-5xl font-bold mb-10">Meet Our Team</h1>
-      <div className="flex flex-wrap justify-center gap-10">
+    <div className="about-us">
+      <style>{`
+        .about-us {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background-color: #f4f4f4;
+          text-align: center;
+        }
+        .about-us h1 {
+          font-size: 60px;
+          font-weight: 200;
+          margin: 20px;
+        }
+        .card-container {
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+        }
+        .card {
+          width: 250px;
+          height: 350px;
+          perspective: 1000px;
+          margin: 20px;
+        }
+        .card-inner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          transition: transform 0.6s;
+          transform-style: preserve-3d;
+        }
+        .card:hover .card-inner {
+          transform: rotateY(180deg);
+        }
+        .card-front,
+        .card-back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .card-front {
+          background-color: #fff;
+        }
+        .card-back {
+          background-color: #007bff;
+          color: white;
+          transform: rotateY(180deg);
+        }
+        img {
+          width: 100%;
+          border-radius: 10px 10px 0 0;
+        }
+      `}</style>
+      <h1>Meet Our Team</h1>
+      <div className="card-container">
         {teamMembers.map((member, index) => (
-          <div key={index} className="w-60 h-80 perspective">
-            <div className="relative w-full h-full group">
-              {/* Front Side */}
-              <div className="absolute w-full h-full bg-white shadow-lg rounded-lg backface-hidden transition-transform duration-500 group-hover:rotate-y-180 flex flex-col items-center justify-center">
-                <img
-                  src={member.imgSrc}
-                  alt={member.name}
-                  className="w-full h-48 object-cover rounded-t-lg"
-                />
-                <h2 className="text-xl font-bold mt-4">{member.name}</h2>
-                <p className="text-gray-600">{member.role}</p>
+          <div key={index} className="card">
+            <div className="card-inner">
+              <div className="card-front">
+                <img src={member.imgSrc} alt={member.name} />
+                <h2>{member.name}</h2>
+                <p>{member.role}</p>
               </div>
-
-              {/* Back Side */}
-              <div className="absolute w-full h-full bg-blue-500 text-white shadow-lg rounded-lg backface-hidden rotate-y-180 flex flex-col items-center justify-center transition-transform duration-500 delay-150">
-                <h2 className="text-xl font-bold">{`About ${member.name}`}</h2>
-                <p className="mt-4 px-4 text-center">{member.about}</p>
+              <div className="card-back">
+                <h2>About {member.name}</h2>
+                <p>{member.about}</p>
               </div>
             </div>
           </div>
         ))}
       </div>
-
-      {/* Inline CSS for card flipping effect */}
-      <style jsx>{`
-        .perspective {
-          perspective: 1000px; /* Perspective for 3D effect */
-        }
-
-        .backface-hidden {
-          backface-visibility: hidden; /* Hide back side when not facing the viewer */
-        }
-
-        .group:hover .rotate-y-180 {
-          transform: rotateY(180deg); /* Rotate the back side on hover */
-        }
-
-        /* Add transition for the card flipping */
-        .group {
-          transition: transform 1.5s; /* Transition for the whole card */
-        }
-      `}</style>
     </div>
   );
 };
 
-export default AboutUs;
+export default AboutUs
