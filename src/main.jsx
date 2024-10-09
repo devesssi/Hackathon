@@ -5,8 +5,11 @@ import { Route, Router, RouterProvider, createBrowserRouter, createRoutesFromEle
 import Layout from './Components/Layout'; // Ensure Layout is defined
 import CoursesPage from './Components/Features/CourcesPage';
 import SkillsPage from './Components/Features/Skill';
+import Chatbot from './Components/Features/chatbot';
 
 import HomePage from './Components/Features/HomePage';
+import Load from './Components/Features/Loading/Load';
+import Vlab from './Components/Features/vlab';
 
 
 
@@ -29,6 +32,8 @@ const router = createBrowserRouter(
     <Route path="/features" element={<SkillsPage />} />
     <Route path="/" element={<HomePage />} />
     <Route path="/vlab" element={<Vlab />} />
+    <Route path="/Chatbot" element={<Chatbot />} />
+
     <Route path='/about' element={<AboutUs/>}/>
 
 
