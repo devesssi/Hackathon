@@ -70,14 +70,14 @@ const SkillsPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-blue-100 mt-12">
+    <div className="min-h-screen    mt-12" style={{ background: '#1E3A8A' }}>
       <div className="container mx-auto p-8">
-        <h1 className="text-4xl font-bold text-center mb-10">Develop Your Skills</h1>
+        <h1 className="text-4xl font-bold text-white text-center mb-10">Develop Your Skills</h1>
 
         {/* Technical and Soft Skills Sections */}
         {skillsData.map((skillCategory) => (
           <div key={skillCategory.category} className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">{skillCategory.category}</h2>
+            <h2 className="text-2xl  text-white font-semibold mb-4">{skillCategory.category}</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {skillCategory.items.map((skill) => (
                 <div
@@ -103,7 +103,7 @@ const SkillsPage = () => {
           <div className="space-y-4">
             {Object.keys(progress).map((skill) => (
               <div key={skill} className="bg-white p-4 rounded-lg shadow-md">
-                <h3 className="text-xl font-medium">{skill}</h3>
+                <h3 className="text-xl  font-medium">{skill}</h3>
                 <div className="w-full bg-gray-200 rounded-full h-4 mt-2">
                   <div
                     className="bg-blue-500 h-4 rounded-full transition-all duration-500"

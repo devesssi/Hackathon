@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+import { Route, Router, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import Layout from './Components/Layout'; // Ensure Layout is defined
 import CoursesPage from './Components/Features/CourcesPage';
 import SkillsPage from './Components/Features/Skill';
-import HomePage from './Components/Features/HomePage'
+import HomePage from './Components/Features/HomePage';
+import Load from './Components/Features/Loading/Load';
 
 // Creating the router using react-router-dom
 const router = createBrowserRouter(
@@ -13,11 +14,10 @@ const router = createBrowserRouter(
     <Route path="/" element={<Layout />}>
       
       
-      
-
+      <Route index element={<Load />} /> 
     <Route path="/courses" element={<CoursesPage/>} />
     <Route path="/features" element={<SkillsPage />} />
-    <Route path="/" element={<HomePage />} />
+    <Route path="/home" element={<HomePage />} />
 
     </Route>
   )

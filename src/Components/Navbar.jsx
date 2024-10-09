@@ -13,12 +13,12 @@ const Navbar = () => {
 
         {/* Navigation Menu */}
         <nav className="hidden md:flex space-x-6">
-          <Link to="/" className="hover:bg-blue-500 px-3 py-2 rounded">Home</Link>
+          <Link to="/home" className="hover:bg-blue-500 px-3 py-2 rounded">Home</Link>
           <Link to="/courses" className="hover:bg-blue-500 px-3 py-2 rounded">Courses</Link>
           <Link to="/features" className="hover:bg-blue-500 px-3 py-2 rounded">Features</Link>
           <Link to="/about" className="hover:bg-blue-500 px-3 py-2 rounded">About Us</Link>
           <Link to="/contact" className="hover:bg-blue-500 px-3 py-2 rounded">Contact</Link>
-          
+
         </nav>
 
         {/* Buttons */}
