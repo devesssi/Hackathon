@@ -1,21 +1,36 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+import { Route, Router, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import Layout from './Components/Layout'; // Ensure Layout is defined
 import CoursesPage from './Components/Features/CourcesPage';
 import SkillsPage from './Components/Features/Skill';
-import HomePage from './Components/Features/HomePage'
-import Vlab from './Components/Features/vlab';
+
+import HomePage from './Components/Features/HomePage';
+
+
+
+import Vlab from "./Components/Features/Vlab"
+import AboutUs from './Components/Features/AboutUs';
 
 // Creating the router using react-router-dom
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
+
+      
+      
+      
+    <Route path="/courses" element={<CoursesPage/>} />
+    <Route path="/features" element={<SkillsPage />} />
+    <Route path="/home" element={<HomePage />} />
+
     <Route path="/courses" element={<CoursesPage/>} />
     <Route path="/features" element={<SkillsPage />} />
     <Route path="/" element={<HomePage />} />
     <Route path="/vlab" element={<Vlab />} />
+    <Route path='/about' element={<AboutUs/>}/>
+
 
     </Route>
   )
