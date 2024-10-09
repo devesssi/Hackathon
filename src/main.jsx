@@ -8,16 +8,10 @@ import SkillsPage from './Components/Features/Skill';
 import StudyMaterialPage from './Components/Features/StudyMaterialPage';
 import HomePage from './Components/Features/HomePage';
 import Load from './Components/Features/Loading/Load';
-<<<<<<< HEAD
-import Vlab from './Components/Features/vlab';
 
-
-=======
-
-import Chatbot from "./Components/Features/Chatbot"
+import Chatbot from "./Components/Features/Chatbot/"
 import SignUp from './Components/Auth/SignUp';
 import Vlab from "./Components/Features/Vlab"
->>>>>>> 706227c62e120a0ab32b1a553b5055daa7869ffa
 import AboutUs from './Components/Features/AboutUs';
 
 // Creating the router using react-router-dom

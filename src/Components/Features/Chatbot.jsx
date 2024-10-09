@@ -84,20 +84,9 @@ function App() {
             }`}
             style={{ width: "fit-content", maxWidth: "75%" }}
           >
-<<<<<<< HEAD
-            {generatingAnswer ? "Generating..." : "Generate answer"}
-          </button>
-        </form>
-        <div className="w-full md:w-2/3 lg:w-1/2 xl:w-1/3 text-center rounded-lg bg-white my-4 shadow-lg transition-all duration-500 transform hover:scale-105">
-          <ReactMarkdown className="p-4 text-left whitespace-pre-wrap">
-            {answer}
-          </ReactMarkdown>
-        </div>
-=======
             <ReactMarkdown className="whitespace-pre-wrap">{chat.content}</ReactMarkdown>
           </div>
         ))}
->>>>>>> 706227c62e120a0ab32b1a553b5055daa7869ffa
       </div>
 
       {/* Input Section */}
