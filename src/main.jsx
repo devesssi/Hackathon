@@ -12,6 +12,10 @@ import Load from './Components/Features/Loading/Load';
 import Vlab from './Components/Features/vlab';
 
 
+
+import Vlab from "./Components/Features/Vlab"
+import AboutUs from './Components/Features/AboutUs';
+
 // Creating the router using react-router-dom
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,7 +23,7 @@ const router = createBrowserRouter(
 
       
       
-      <Route index element={<Load />} /> 
+      
     <Route path="/courses" element={<CoursesPage/>} />
     <Route path="/features" element={<SkillsPage />} />
     <Route path="/home" element={<HomePage />} />
@@ -30,6 +34,7 @@ const router = createBrowserRouter(
     <Route path="/vlab" element={<Vlab />} />
     <Route path="/Chatbot" element={<Chatbot />} />
 
+    <Route path='/about' element={<AboutUs/>}/>
 
 
     </Route>
