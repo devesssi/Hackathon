@@ -14,7 +14,7 @@ const HomePage = () => {
         <div className="text-section">
           <h1 className="main-heading">
             <Typewriter
-              words={['Welcome to the Engineering Platform', 'Your Journey Begins Here']}
+              words={['Welcome to the Learning Platform', 'Your Journey Begins Here']}
               loop={false}
               cursor
               cursorStyle="_"
