@@ -38,14 +38,12 @@ const VirtualLabRedirect = () => {
   const redirectToLab = () => {
     window.location.href = "https://iitb.vlabs.co.in/";
   };
-  
 
   const handleRedirect = (url) => {
     window.open(url, '_blank'); // Opens the link in a new tab
   };
 
   return (
-
     <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-8 mt-6">
       <h1 className="text-5xl font-bold mb-0">Welcome to the Virtual Lab</h1>
       
@@ -77,22 +75,6 @@ const VirtualLabRedirect = () => {
         className="bg-blue-500 text-white px-6 py-3 rounded-lg text-lg">
         Go to Virtual Lab
       </button>
-
-    <div className="min-h-screen flex flex-col justify-center items-center bg-gray-100">
-      <div className="bg-white p-8 rounded-lg shadow-lg text-center">
-        <h1 className="text-3xl font-bold text-gray-800 mb-6">
-          Welcome to the Virtual Lab
-        </h1>
-        <p className="text-gray-600 mb-6">
-          Experience hands-on learning by visiting the Virtual Lab platform, designed to provide interactive experiments and simulations.
-        </p>
-        <button 
-          onClick={redirectToLab}
-          className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-300">
-          Go to Virtual Lab
-        </button>
-      </div>
-
     </div>
   );
 };

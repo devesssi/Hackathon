@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 // Example images for subjects (replace with actual URLs or local assets)
 const subjectImages = {
@@ -76,12 +77,9 @@ const coursesData = [
 ];
 
 const CoursesPage = () => {
-  // State to track which semesters are expanded
   const [expandedSemester, setExpandedSemester] = useState(null);
 
-  // Toggle the selected semester
   const toggleSemester = (index) => {
-    // If the clicked semester is already expanded, collapse it, otherwise expand it
     setExpandedSemester(expandedSemester === index ? null : index);
   };
 
@@ -90,38 +88,30 @@ const CoursesPage = () => {
       <div className="container mx-auto p-8">
         <h1 className="text-4xl font-bold text-center mb-10">Explore Courses</h1>
 
-        {/* Semester List */}
         {coursesData.map((semester, index) => (
           <div key={index} className="mb-6">
-            {/* Semester Card */}
             <div
               className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg cursor-pointer flex justify-between items-center"
               onClick={() => toggleSemester(index)}
             >
               <h2 className="text-2xl font-semibold">{semester.semester}</h2>
               <span className="text-xl font-bold">
-                {expandedSemester === index ? '-' : '+'} {/* Toggle icon */}
+                {expandedSemester === index ? '-' : '+'}
               </span>
             </div>
 
-            {/* Subjects for the selected semester */}
             {expandedSemester === index && (
               <div className="mt-4 pl-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                   {semester.subjects.map((subject, idx) => (
-                    <div
-                      key={idx}
-                      className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg text-center"
-                    >
-                      {/* Subject Image */}
+                    <Link to={`/study-material/${subject}`} key={idx} className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg text-center">
                       <img
                         src={subjectImages[subject] || 'https://via.placeholder.com/150'}
                         alt={subject}
                         className="w-full h-32 object-cover mb-4 rounded-lg"
                       />
-                      {/* Subject Name */}
                       <h3 className="text-lg font-semibold">{subject}</h3>
-                    </div>
+                    </Link>
                   ))}
                 </div>
               </div>
