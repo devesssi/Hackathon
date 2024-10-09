@@ -13,7 +13,7 @@ function App() {
   return (
     <>
     <Main/>
-    <Footer/>
+    <Footer/>    
     </>
   )
 }
