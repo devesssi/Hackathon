@@ -7,6 +7,7 @@ import CoursesPage from './Components/Features/CourcesPage';
 import SkillsPage from './Components/Features/Skill';
 import StudyMaterialPage from './Components/Features/StudyMaterialPage';
 import HomePage from './Components/Features/HomePage';
+import Load from './Components/Features/Loading/Load';
 
 
 
@@ -31,6 +32,8 @@ const router = createBrowserRouter(
     <Route path="/features" element={<SkillsPage />} />
     <Route path="/" element={<HomePage />} />
     <Route path="/vlab" element={<Vlab />} />
+    <Route path="/Chatbot" element={<Chatbot />} />
+
     <Route path='/about' element={<AboutUs/>}/>
 
 
