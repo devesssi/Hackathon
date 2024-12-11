@@ -31,7 +31,7 @@ function App() {
       setChatHistory((prevChat) => [...prevChat, loadingMessage]);
 
       const response = await axios({
-        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyB--LO1wAj9RU1TxfDqSGJiK05dl3O8vWg`,
+        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${import.meta.env.VITE_CHATBOT_API}`,
         method: "post",
         data: {
           contents: [{ parts: [{ text: question }] }],
